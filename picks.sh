@@ -38,3 +38,4 @@ repopick 256959 # netd: Allow devices to force-add directly-connected routes
 
 # vendor/lineage
 repopick -c 20 256960 # soong_config: add TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE
+repopick 258204 # build: set build fingerprint for all devices
