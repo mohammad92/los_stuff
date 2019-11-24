@@ -25,7 +25,7 @@ source build/envsetup.sh
 # get cpu cores minus 2
 CORES=`nproc --ignore=2`
 
-# fire up the building process
+# fire up the building process and also log stdout and stderrout
 lunch lineage_$1-userdebug
 
 # clean the out dir; comment out, if you want to
@@ -36,6 +36,6 @@ case $2 in
   "installclean") make installclean;
 esac;
 
-mka bacon -j$CORES
+mka bacon -j$CORES 2>&1 | tee $1_make.log
 
 exit 0;
