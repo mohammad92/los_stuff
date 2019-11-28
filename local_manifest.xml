@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remove-project name="platform/frameworks/opt/net/ims" />
-  <project name="LineageOS/android_frameworks_opt_net_ims" path="frameworks/opt/net/ims" remote="github" revision="lineage-17.0" />
-
   <project name="mohammad92/android_device_samsung_klte" path="device/samsung/klte" remote="github" revision="lineage-17.0" />
   <project name="mohammad92/android_device_samsung_klte-common" path="device/samsung/klte-common" remote="github" revision="lineage-17.0" />
   <project name="mohammad92/android_device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" revision="lineage-17.0" />
