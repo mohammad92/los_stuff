@@ -13,19 +13,13 @@ repopick 256308 # tinycompress: Enable extended compress format
 repopick 256899 # camera: Allow devices to load custom CameraParameter code
 repopick 258812 # CameraService: Support hooks for motorized camera
 
-# frameworks/native
-repopick 259448 # libui: Allow invalid bits from callers conditionally
-
 # frameworks/opt/telephony
-#repopick -c 10 -t ten-ims
 repopick -c 20 -t ten-qc-telephony-fix
-#repopick -c 30 -t ten-qc-ims # And frameworks/opt/net/ims
 repopick -c 30 -t ten-qc-telephony-ext
 
 # hardware/samsung
 repopick 256236 # samsung: AdvancedDisplay: Migrate to androidx
-repopick 264866 # samsung: remove old fingerprint and lights hal
-repopick 264867 # samsung: power: dont depend on liblights_helper
+repopick 264967 # samsung: move modemloader and wifiloader to /vendor
 
 # packages/services/Telephony
 repopick 256792 # Telephony: Add ERI configuration for U.S. Cellular
